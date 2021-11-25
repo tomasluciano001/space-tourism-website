@@ -46,11 +46,13 @@ nav {
     position: relative;
     left: 112px;
     top: 55px;
-    border: 1px solid red;
+    border: 1px solid #97979788;
     width: 473px;
+    
   }
   .blur-BG{
-    background-color: red;
+    background-color: rgba(155, 155, 155, 0.4);
+    backdrop-filter: blur(13px);
     width: 830px;
     height: 90px;
     position: absolute;
@@ -87,6 +89,20 @@ nav {
       span {
         padding-left: 50px;
       }
+      span:hover {
+        // content: '';
+    
+        // width: 100%;
+        // position: absolute;
+        // left: -25px;
+        // bottom: 1px;
+    
+        // border-width: 0 0 1px;
+        // border-style: solid;
+        text-decoration:underline;
+        text-underline-offset: 31px;
+        text-decoration-thickness: 4px;
+    }
     }
   }
 }
@@ -141,12 +157,15 @@ nav {
   }
   .round-btn:hover {
     background: $tertiary;
-    color: $tertiary;
+    color: transparent;
     width: 450px;
     height: 450px;
-    border: 70px solid #979797;
+    border: 70px solid #979797d0;
     padding-top: 70px;
     padding-bottom: 70px;
+    opacity: 0.9;
+    
+    // transition: letter-spacing 33s ease-out, opacity 33s ease-out;
   }
 }
 

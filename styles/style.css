@@ -92,12 +92,14 @@ nav .HRline-navbar {
   position: relative;
   left: 112px;
   top: 55px;
-  border: 1px solid red;
+  border: 1px solid #97979788;
   width: 473px;
 }
 
 nav .blur-BG {
-  background-color: red;
+  background-color: rgba(155, 155, 155, 0.4);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
   width: 830px;
   height: 90px;
   position: absolute;
@@ -138,6 +140,12 @@ nav ul a {
 
 nav ul a span {
   padding-left: 50px;
+}
+
+nav ul a span:hover {
+  text-decoration: underline;
+  text-underline-offset: 31px;
+  text-decoration-thickness: 4px;
 }
 
 .headline {
@@ -194,11 +202,12 @@ nav ul a span {
 
 .explore-btn .round-btn:hover {
   background: white;
-  color: white;
+  color: transparent;
   width: 450px;
   height: 450px;
-  border: 70px solid #979797;
+  border: 70px solid #979797d0;
   padding-top: 70px;
   padding-bottom: 70px;
+  opacity: 0.9;
 }
 /*# sourceMappingURL=style.css.map */
