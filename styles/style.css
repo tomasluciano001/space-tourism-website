@@ -99,7 +99,7 @@ p {
   width: 450px;
   letter-spacing: 4.75px;
   text-transform: uppercase;
-  margin-left: 120px;
+  margin-left: 165px;
 }
 
 .headline-dest b {
@@ -193,7 +193,7 @@ p {
   letter-spacing: 4.75px;
   text-transform: uppercase;
   margin-left: 165px;
-  margin-top: 220px;
+  margin-top: 180px;
 }
 
 .headline-crew b {
@@ -220,6 +220,33 @@ p {
 
 .crew-text p {
   color: #d2d8f9;
+}
+
+.crew-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 175px;
+  bottom: 140px;
+  position: absolute;
+}
+
+.crew-btn .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #979797;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none !important;
+  margin-right: 19px;
+}
+
+.crew-btn .set {
+  background: white;
+}
+
+.crew-btn .dot:hover {
+  background: white;
 }
 
 * {

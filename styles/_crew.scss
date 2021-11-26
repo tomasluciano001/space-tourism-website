@@ -28,7 +28,7 @@
     letter-spacing: 4.75px;
     text-transform: uppercase;
     margin-left: 165px;
-    margin-top: 220px;
+    margin-top: 180px;
     b {
       color: hsl(228, 6, 33);
       font-weight: 900;
@@ -52,5 +52,33 @@
     margin-top: -60px;
     p {
       color: $secondary;
+    }
+  }
+
+  .crew-btn {
+    display: flex;
+    left: 175px;
+    bottom: 140px;
+    position: absolute;
+    
+
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      background-color: #979797;
+      border-radius: 50%;
+      display: inline-block;
+      text-decoration: none !important;
+      margin-right: 19px;
+    }
+    .set{
+      background: $tertiary;
+    }
+    .dot:hover {
+      background: $tertiary;
+
+  
+      // transition: letter-spacing 33s ease-out, opacity 33s ease-out;
     }
   }
