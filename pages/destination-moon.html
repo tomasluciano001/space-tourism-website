@@ -11,14 +11,14 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body>
+<body class="dest-body">
 
   <nav class="main-nav">
     <div class="blur-BG"></div>
     <div class="right-navbar">
     <ul>
       <li><a href="../index.html"><span><b>00</b> HOME</span></a></li>
-      <li><a href="./pages/destination-moon.html"><span><b>01</b> DESTINATION</span></a></li>
+      <li><a href="./pages/destination-moon.html"><span class="current"><b>01</b> DESTINATION</span></a></li>
       <li><a href="#"><span><b>02</b> CREW</span></a></li>
       <li><a href="#"><span><b>03</b> TECHNOLOGY</span></a></li>
     </ul>
@@ -29,28 +29,48 @@
   <div class="HRline-navbar"></div>
   </nav>
 
-  <h5>
-  01 Pick your destination
-  </h5>
+  <div class="headline-dest">
+  <b class="number">01</b>  Pick your destination
+  <img class="moon-img" src="../starter-code/assets/destination/image-moon.png" alt="">
+  
+</div>
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+  
+<main class="des-main">
 
 
+  <div class="nav-text-style-dest">
+    <a href=""><span class="current">Moon</span></a>
+    <a href=""><span>Mars</span></a>
+    <a href=""><span>Europa</span></a>
+    <a href=""><span>Titan</span></a>
 
+  </div>
+
+    <h2 class="current-location">Moon</h2>
+
+    
+  
+    <div class="body-text-dest">
+      <p>
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+  </div>
+
+  <div class="HRline-footer-dest"></div>
+
+  <div class="subheadings-section">
+    <div class="subheadings-left">
+      <div class="subheading2">Avg. distance</div>
+      <div class="subheading1">384,400 km</div>
+    </div>
+    <div class="subheadings-right">
+      <div class="subheading2">Est. travel time</div>
+      <div class="subheading1">3 days</div>
+    </div>
+  </div>
+</main>
 </body>
 </html>

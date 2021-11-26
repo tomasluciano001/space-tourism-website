@@ -4,6 +4,7 @@ $secondary: hsl(231, 77%, 90%);
 $tertiary: hsl(0, 0%, 100%);
 
 @import './_headers.scss';
+@import './dest';
 
 * {
   box-sizing: border-box;
@@ -19,10 +20,24 @@ $tertiary: hsl(0, 0%, 100%);
   background-size: cover;
 }
 
+.dest-body {
+  background: url(/starter-code/assets/destination/background-destination-desktop.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 main {
   padding-top: 210px;
   padding-left: 166px;
   width: 690px;
+}
+
+.nav-main{
+  position: fixed;
+  z-index: 1;
 }
 
 nav {
@@ -48,8 +63,9 @@ nav {
     top: 55px;
     border: 1px solid #97979788;
     width: 473px;
-    
   }
+
+
   .blur-BG{
     background-color: rgba(155, 155, 155, 0.4);
     backdrop-filter: blur(13px);
@@ -99,16 +115,29 @@ nav {
     
         // border-width: 0 0 1px;
         // border-style: solid;
+        
         text-decoration:underline;
         text-underline-offset: 31px;
         text-decoration-thickness: 4px;
+        text-decoration-color: #979797;
     }
+    .current{
+      color: $tertiary;
+      text-decoration:underline;
+      text-underline-offset: 31px;
+      text-decoration-thickness: 4px;
+    }
+    
     }
   }
 }
 .headline{
   margin-top: 175px;
 }
+.headline-dest{
+  margin-top: 175px;
+}
+
 .maintitle{
   margin-top: 6px;
 }
@@ -117,7 +146,7 @@ nav {
   width: 390px;
   margin-top: -60px;
   p {
-    color: $tertiary;
+    color: $secondary;
   }
 }
 
