@@ -4,7 +4,8 @@ $secondary: hsl(231, 77%, 90%);
 $tertiary: hsl(0, 0%, 100%);
 
 @import './_headers.scss';
-@import './dest';
+@import './_dest';
+@import './_crew.scss';
 
 * {
   box-sizing: border-box;
@@ -20,14 +21,7 @@ $tertiary: hsl(0, 0%, 100%);
   background-size: cover;
 }
 
-.dest-body {
-  background: url(/starter-code/assets/destination/background-destination-desktop.jpg)
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 main {
   padding-top: 210px;
@@ -35,7 +29,7 @@ main {
   width: 690px;
 }
 
-.nav-main{
+.nav-main {
   position: fixed;
   z-index: 1;
 }
@@ -65,8 +59,7 @@ nav {
     width: 473px;
   }
 
-
-  .blur-BG{
+  .blur-BG {
     background-color: rgba(155, 155, 155, 0.4);
     backdrop-filter: blur(13px);
     width: 830px;
@@ -82,7 +75,6 @@ nav {
     right: 0;
     // position: absolute;
     // filter: blur(1px);
-
   }
 
   ul {
@@ -107,38 +99,37 @@ nav {
       }
       span:hover {
         // content: '';
-    
+
         // width: 100%;
         // position: absolute;
         // left: -25px;
         // bottom: 1px;
-    
+
         // border-width: 0 0 1px;
         // border-style: solid;
-        
-        text-decoration:underline;
+
+        text-decoration: underline;
         text-underline-offset: 31px;
         text-decoration-thickness: 4px;
         text-decoration-color: #979797;
-    }
-    .current{
-      color: $tertiary;
-      text-decoration:underline;
-      text-underline-offset: 31px;
-      text-decoration-thickness: 4px;
-    }
-    
+      }
+      .current {
+        color: $tertiary;
+        text-decoration: underline;
+        text-underline-offset: 31px;
+        text-decoration-thickness: 4px;
+      }
     }
   }
 }
-.headline{
+.headline {
   margin-top: 175px;
 }
-.headline-dest{
+.headline-dest {
   margin-top: 175px;
 }
 
-.maintitle{
+.maintitle {
   margin-top: 6px;
 }
 
@@ -149,7 +140,6 @@ nav {
     color: $secondary;
   }
 }
-
 
 //Explore button div + anchor tag
 .explore-btn {
@@ -193,7 +183,7 @@ nav {
     padding-top: 70px;
     padding-bottom: 70px;
     opacity: 0.9;
-    
+
     // transition: letter-spacing 33s ease-out, opacity 33s ease-out;
   }
 }
