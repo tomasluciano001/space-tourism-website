@@ -227,7 +227,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   left: 175px;
-  bottom: 140px;
+  margin-top: 135px;
   position: absolute;
 }
 
@@ -273,6 +273,7 @@ p {
   font-size: 32px;
   text-align: center;
   padding-top: 22px;
+  font-family: 'Bellefair', serif;
 }
 
 .tech-btn .dot {
@@ -539,10 +540,58 @@ nav ul a .current {
     text-align: center;
   }
   main .body-text {
+    border-radius: 1em;
+    padding: 1em;
+    padding-top: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main .body-text p {
     text-align: center;
+    margin: 0;
   }
   .explore-btn {
-    bottom: 0;
+    bottom: 180px;
+    right: 50%;
+    left: 50%;
+  }
+  .explore-btn .round-btn {
+    display: block;
+    width: 274px;
+    height: 274px;
+    line-height: 80px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+    -webkit-box-shadow: 0 0 3px white;
+            box-shadow: 0 0 3px white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 999;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .explore-btn .round-btn:hover {
+    background: white;
+    color: transparent;
+    width: 274px;
+    height: 274px;
+    border: 0px solid transparent;
+    line-height: 80px;
+    opacity: 0.9;
   }
 }
 /*# sourceMappingURL=style.css.map */
