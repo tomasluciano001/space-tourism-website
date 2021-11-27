@@ -516,4 +516,33 @@ nav ul a .current {
   padding-bottom: 70px;
   opacity: 0.9;
 }
+
+@media screen and (max-width: 960px) {
+  .home-body {
+    background: url(/starter-code/assets/home/background-home-tablet.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  main {
+    width: 100%;
+    display: relative;
+  }
+  main .headline {
+    display: float;
+    margin-left: -100px;
+    width: 100%;
+    text-align: center;
+    margin-top: -50px;
+    font-size: 18px;
+  }
+  main .maintitle {
+    margin-left: -200px;
+    text-align: center;
+  }
+  main .body-text {
+    text-align: center;
+  }
+  .explore-btn {
+    bottom: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

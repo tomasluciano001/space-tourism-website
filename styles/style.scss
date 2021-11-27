@@ -148,13 +148,13 @@ nav {
   position: absolute;
   right: 275px;
   bottom: 340px;
+  
 
   .round-btn {
     display: block;
     width: 274px;
     height: 274px;
     line-height: 80px;
-
     border-radius: 50%;
     color: $tertiary;
     text-align: center;
@@ -167,7 +167,6 @@ nav {
     z-index: 999;
     padding-top: 70px;
     padding-bottom: 70px;
-    // padding: 10px 0;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -192,3 +191,46 @@ nav {
 // .btn-h4:hover {
 //     text-decoration: underline black //This colour is an example
 // }
+@media screen and (max-width: 960px) {
+
+  .home-body {
+    background: url(/starter-code/assets/home/background-home-tablet.jpg)
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  main {
+  
+  width: 100%;
+  display: relative;
+  
+    .headline{
+        display: float;
+        // justify-content: space-between;
+        // align-items: center;
+        // height: 96px;
+        
+        margin-left: -100px;
+        width: 100%;
+        text-align: center;
+        margin-top: -50px;
+        font-size: 18px;
+
+      }
+      .maintitle {
+        margin-left: -200px;
+        text-align: center;
+      }
+      .body-text{
+        text-align: center;
+      }
+  }
+
+.explore-btn{
+  bottom: 0;
+}
+
+}
