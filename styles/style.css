@@ -249,6 +249,92 @@ p {
   background: white;
 }
 
+.tech-body {
+  background: url(/starter-code/assets/technology/background-technology-desktop.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.tech-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 55px;
+  bottom: 32px;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: left;
+}
+
+.tech-btn a {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 22px;
+}
+
+.tech-btn .dot {
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.404);
+  border-width: 1px;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none !important;
+  margin-top: 19px;
+}
+
+.tech-btn .set {
+  background: white;
+  color: black;
+}
+
+.tech-btn .set:hover {
+  pointer-events: none;
+}
+
+.tech-btn .dot:hover {
+  border-width: 1.5px;
+  border-color: white;
+}
+
+.tech-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: -5px;
+  bottom: 150px;
+}
+
+.tech-main {
+  left: 123px;
+  bottom: 260px;
+  position: absolute;
+  padding-left: 210px;
+}
+
+.tech-main .tech-text {
+  width: 368px;
+  margin-top: -60px;
+}
+
+.tech-main .tech-text p {
+  color: #d2d8f9;
+}
+
+.pretitle {
+  font-size: 16px;
+  color: #d2d8f9;
+  letter-spacing: 2.7px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
