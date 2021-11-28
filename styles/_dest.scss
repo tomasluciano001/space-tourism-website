@@ -112,3 +112,64 @@
     width: 445px;
     height: 445px;
 }
+
+
+@media screen and (max-width: 960px) {
+  .headline-dest {
+    position: fixed;
+    z-index: 2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: $tertiary;
+    width: 450px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    top: -30px;
+    b {
+      color: hsl(228, 6, 33);
+      font-weight: 900;
+    }
+  }
+
+  .moon-img{
+    position: absolute;
+    left: 40%;
+    top: 80px;
+    width: 250px;
+    height: 250px;
+  }
+  .des-main {
+    position: absolute; /*or fixed*/
+    // right: 50%;
+    left: 60px;
+    top: 510px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .current-location {
+    text-transform: uppercase;
+    margin-left: -40px;
+    margin-top: 60px;
+  }
+
+  .body-text-dest {
+    width: 500px;
+    margin-top: -75px;
+    margin-left: -130px;
+    p {
+      color: $secondary;
+      text-align: center;
+    }
+  }
+
+  .HRline-footer-dest {
+    display: absolute;
+    position: relative;
+    left: -100px;
+    top: 0;
+    border: 1px solid #97979788;
+    width: 444px;
+  }
+}

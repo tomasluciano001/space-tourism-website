@@ -169,6 +169,63 @@ p {
   height: 445px;
 }
 
+@media screen and (max-width: 960px) {
+  .headline-dest {
+    position: fixed;
+    z-index: 2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: white;
+    width: 450px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    top: -30px;
+  }
+  .headline-dest b {
+    color: #4f5159;
+    font-weight: 900;
+  }
+  .moon-img {
+    position: absolute;
+    left: 40%;
+    top: 80px;
+    width: 250px;
+    height: 250px;
+  }
+  .des-main {
+    position: absolute;
+    /*or fixed*/
+    left: 60px;
+    top: 510px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .current-location {
+    text-transform: uppercase;
+    margin-left: -40px;
+    margin-top: 60px;
+  }
+  .body-text-dest {
+    width: 500px;
+    margin-top: -75px;
+    margin-left: -130px;
+  }
+  .body-text-dest p {
+    color: #d2d8f9;
+    text-align: center;
+  }
+  .HRline-footer-dest {
+    display: absolute;
+    position: relative;
+    left: -100px;
+    top: 0;
+    border: 1px solid #97979788;
+    width: 444px;
+  }
+}
+
 .crew-body {
   background: url(/starter-code/assets/crew/background-crew-desktop.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -247,6 +304,82 @@ p {
 
 .crew-btn .dot:hover {
   background: white;
+}
+
+@media screen and (max-width: 960px) {
+  .headline-crew {
+    position: fixed;
+    z-index: 2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: white;
+    width: 450px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    top: -30px;
+  }
+  .headline-crew b {
+    color: #4f5159;
+    font-weight: 900;
+  }
+  .title {
+    color: rgba(206, 198, 198, 0.473);
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 32px;
+    text-align: center;
+    margin-left: -130px;
+  }
+  .crew-name {
+    margin-top: -40px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -130px;
+  }
+  .crew-text {
+    width: 440px;
+    top: 0;
+  }
+  .crew-text p {
+    color: #d2d8f9;
+    text-align: center;
+  }
+  .crew-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 320px;
+    margin-top: 15px;
+    position: absolute;
+  }
+  .crew-btn .dot {
+    height: 15px;
+    width: 15px;
+    background-color: #979797;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-right: 19px;
+  }
+  .crew-btn .set {
+    background: white;
+  }
+  .crew-btn .dot:hover {
+    background: white;
+  }
+  .crew-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+  }
+  .crew-image img {
+    width: 320px;
+  }
 }
 
 .tech-body {
@@ -334,6 +467,82 @@ p {
   letter-spacing: 2.7px;
   margin-bottom: 50px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+  .headline-crew {
+    position: fixed;
+    z-index: 2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: white;
+    width: 450px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    top: -30px;
+  }
+  .headline-crew b {
+    color: #4f5159;
+    font-weight: 900;
+  }
+  .title {
+    color: rgba(206, 198, 198, 0.473);
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 32px;
+    text-align: center;
+    margin-left: -130px;
+  }
+  .crew-name {
+    margin-top: -40px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -130px;
+  }
+  .crew-text {
+    width: 440px;
+    top: 0;
+  }
+  .crew-text p {
+    color: #d2d8f9;
+    text-align: center;
+  }
+  .crew-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 320px;
+    margin-top: 15px;
+    position: absolute;
+  }
+  .crew-btn .dot {
+    height: 15px;
+    width: 15px;
+    background-color: #979797;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-right: 19px;
+  }
+  .crew-btn .set {
+    background: white;
+  }
+  .crew-btn .dot:hover {
+    background: white;
+  }
+  .crew-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+  }
+  .crew-image img {
+    width: 320px;
+  }
 }
 
 * {
@@ -519,6 +728,89 @@ nav ul a .current {
 }
 
 @media screen and (max-width: 960px) {
+  nav {
+    display: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem;
+    height: 96px;
+    width: 1385px;
+    background-color: transparent;
+    float: right;
+  }
+  nav .left-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 35px;
+    top: 40px;
+  }
+  nav .HRline-navbar {
+    display: none;
+    visibility: hidden;
+  }
+  nav .blur-BG {
+    background-color: rgba(155, 155, 155, 0.4);
+    -webkit-backdrop-filter: blur(13px);
+            backdrop-filter: blur(13px);
+    width: 830px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  nav .right-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 830px;
+    position: flex;
+    right: 0;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  nav ul li {
+    margin-right: 1rem;
+  }
+  nav ul a {
+    color: white;
+    text-decoration: none;
+  }
+  nav ul a b {
+    display: none;
+    visibility: hidden;
+  }
+  nav ul a span {
+    padding-left: 50px;
+  }
+  nav ul a span:hover {
+    text-decoration: underline;
+    text-underline-offset: 31px;
+    text-decoration-thickness: 4px;
+    -webkit-text-decoration-color: #979797;
+            text-decoration-color: #979797;
+  }
+  nav ul a .current {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 31px;
+    text-decoration-thickness: 4px;
+  }
   .home-body {
     background: url(/starter-code/assets/home/background-home-tablet.jpg) no-repeat center center fixed;
     background-size: cover;
