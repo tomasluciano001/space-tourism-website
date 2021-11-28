@@ -188,7 +188,7 @@ p {
   }
   .moon-img {
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 80px;
     width: 250px;
     height: 250px;
@@ -208,7 +208,7 @@ p {
     margin-top: 60px;
   }
   .body-text-dest {
-    width: 500px;
+    width: 540px;
     margin-top: -75px;
     margin-left: -130px;
   }
@@ -339,7 +339,7 @@ p {
     margin-left: -130px;
   }
   .crew-text {
-    width: 440px;
+    width: 560px;
     top: 0;
   }
   .crew-text p {
@@ -350,7 +350,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    left: 320px;
+    left: 45%;
     margin-top: 15px;
     position: absolute;
   }
@@ -591,7 +591,7 @@ p {
     color: #d2d8f9;
     letter-spacing: 2.7px;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 115px;
     margin-left: -35px;
   }
   .tech-main .tech-name {
