@@ -92,6 +92,7 @@ p {
 
 .headline-dest {
   position: fixed;
+  margin-top: 175px;
   z-index: 2;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 28px;
@@ -730,10 +731,6 @@ nav ul a .current {
   margin-top: 175px;
 }
 
-.headline-dest {
-  margin-top: 175px;
-}
-
 .maintitle {
   margin-top: 6px;
 }
@@ -794,6 +791,7 @@ nav ul a .current {
 }
 
 .attribution {
+  width: 300px;
   color: #d2d8f9;
   font-size: 11px;
   text-align: center;
@@ -965,6 +963,164 @@ nav ul a .current {
     border: 0px solid transparent;
     line-height: 80px;
     opacity: 0.9;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-body {
+    background: url(/starter-code/assets/home/background-home-mobile.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  .main-nav {
+    display: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem;
+    height: 96px;
+    width: 1385px;
+    background-color: transparent;
+    float: right;
+  }
+  .main-nav .hamburger {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    background: url(/starter-code/assets/shared/icon-hamburger.svg) no-repeat;
+    width: 50px;
+    height: 55px;
+    right: 5%;
+    top: 6.5%;
+    z-index: 999;
+  }
+  .main-nav .hamburger ul {
+    visibility: hidden;
+  }
+  .main-nav .hamburger ul b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+  }
+  .main-nav .left-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 35px;
+    top: 40px;
+  }
+  .main-nav .HRline-navbar {
+    display: none;
+    visibility: hidden;
+  }
+  .main-nav .blur-BG {
+    background-color: rgba(155, 155, 155, 0.4);
+    -webkit-backdrop-filter: blur(13px);
+            backdrop-filter: blur(13px);
+    width: 600px;
+    height: 90px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 20px;
+    right: 0;
+  }
+  .main-nav .right-navbar {
+    display: none;
+    width: 830px;
+    position: flex;
+    right: 0;
+  }
+  .main-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .main-nav ul li {
+    margin-right: 1rem;
+  }
+  .main-nav ul a {
+    color: white;
+    text-decoration: none;
+  }
+  .main-nav ul a b {
+    display: none;
+    visibility: hidden;
+  }
+  .main-nav ul a span {
+    padding-left: 50px;
+  }
+  .main-nav ul a span:hover {
+    text-decoration: underline;
+    text-underline-offset: 31px;
+    text-decoration-thickness: 4px;
+    -webkit-text-decoration-color: #979797;
+            text-decoration-color: #979797;
+  }
+  .main-nav ul a .current {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 31px;
+    text-decoration-thickness: 4px;
+  }
+  .explore-btn {
+    bottom: 180px;
+    right: 50%;
+    left: 50%;
+  }
+  .explore-btn .round-btn {
+    display: none;
+    width: 274px;
+    height: 274px;
+    line-height: 80px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+    -webkit-box-shadow: 0 0 3px white;
+            box-shadow: 0 0 3px white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 999;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .explore-btn .round-btn:hover {
+    background: white;
+    color: transparent;
+    width: 274px;
+    height: 274px;
+    border: 0px solid transparent;
+    line-height: 80px;
+    opacity: 0.9;
+  }
+  .headline {
+    margin-top: 175px;
+    width: 100%;
+  }
+  .maintitle {
+    margin-top: 6px;
+    font-size: 62px;
   }
 }
 /*# sourceMappingURL=style.css.map */

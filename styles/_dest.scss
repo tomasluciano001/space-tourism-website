@@ -36,8 +36,12 @@
   text-transform: uppercase;
 }
 
+// .headline-dest {
+//   margin-top: 175px;
+// }
 .headline-dest {
   position: fixed;
+  margin-top: 175px;
   z-index: 2;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 28px;
