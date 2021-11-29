@@ -6,7 +6,10 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  
+  .sidenav {
+    display: none;
+    visibility: hidden;
+  }
   .crew-image {
     display: flex;
     position: absolute;

@@ -14,6 +14,16 @@
 <body class="dest-body">
 
   <nav class="main-nav">
+    <!-- mobile sidenav -->
+    <div class="sidenav" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html"><span class="current"><b>00</b> HOME</span></a>
+      <a href="./pages/destination-moon.html"><span><b>01</b> DESTINATION</span></a>
+      <a href="./pages/crew-commander.html"><span><b>02</b> CREW</span></a>
+      <a href="./pages/technology-vehicle.html"><span><b>03</b> TECHNOLOGY</span></a>
+    </div>
+    <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>  
+
     <div class="blur-BG"></div>
     <div class="right-navbar">
     <ul>
@@ -72,5 +82,6 @@
     </div>
   </div>
 </main>
+<script src="../styles/script.js"></script>
 </body>
 </html>
