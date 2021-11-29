@@ -1,7 +1,7 @@
-// const toggleButton = document.getElementsByClassName('toggle-button')[0]
-// const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+function openNav() {
+  document.getElementById('mySidenav').style.width = '250px'
+}
 
-// toggleButton.addEventListener('click', () => {
-//     navbarLinks.classList.toggle('active')
-// });
-console.log('hello')
+function closeNav() {
+  document.getElementById('mySidenav').style.width = '0'
+}
