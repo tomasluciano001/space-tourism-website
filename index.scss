@@ -60,6 +60,9 @@ body {
   background-color: $primary;
   line-height: 1.5;
   min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
 
 // make images easier to work with
@@ -110,6 +113,27 @@ select {
   margin-inline: auto;
   max-width: 80rem;
 }
+.grid-container {
+  border: 5px solid purple;
+  display: grid;
+
+}
+@media (min-width: 45rem) {
+  .grid-container {
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr);
+    column-gap: var(--container-gap, 2rem);
+  }
+  .grid-container > *:first-child {
+    grid-column: 2;
+    outline: 1px solid red;
+}
+
+.grid-container > *:last-child {
+    grid-column: 3;
+    outline: 1px solid green;
+}
+}
+
 
 .sr-only {
   position: absolute;
