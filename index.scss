@@ -81,6 +81,8 @@ body {
 
   display: grid;
   grid-template-rows: min-content 1fr;
+
+  overflow-x: hidden;
 }
 
 // make images easier to work with
@@ -165,7 +167,7 @@ select {
   }
   .grid-container--home {
     padding-bottom: msc(6rem, 20vh);
-    align-items: end;
+    // align-items: end;
   }
 }
 
@@ -298,7 +300,7 @@ select {
   place-items: center;
   padding: 0 2em;
   border-radius: 50%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1;
   text-decoration: none;
 }
 
@@ -319,29 +321,30 @@ select {
 .large-button:focus::after {
   transform: scale(1.5);
 }
+
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .primary-navigation {
+  --gap: clamp(1.5rem, 5.5vw, 3.5rem);
   --underline-gap: 2rem;
   list-style: none;
   margin: 0;
   background: rgba($tertiary, 0.1);
   backdrop-filter: blur(1.2rem);
 }
-@media (max-width: 35rem) {
+@supports (backdrop-filter: blur(1rem)) {
   .primary-navigation {
-    --underline-gap: 0.5rem;
-    list-style: none;
-    padding: MIN(20rem, 10vh) 2rem;
-    margin: 0;
-    flex-direction: column;
-    position: fixed;
-    inset: 0 0 0 25%;
-    z-index: 100;
-  }
-  .primary-navigation.underline-indicators > .active {
-    border: 0;
+    background: rgba($tertiary, 0.1);
+    backdrop-filter: blur(1.2rem);
   }
 }
-
 .primary-navigation a {
   text-decoration: none;
   color: $tertiary;
@@ -350,6 +353,80 @@ select {
 .primary-navigation a span {
   font-weight: bold;
   margin-right: 0.5em;
+}
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 35rem) {
+  .primary-navigation {
+    --underline-gap: 0.5rem;
+    list-style: none;
+    padding: MIN(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+    position: fixed;
+    inset: 0 0 0 25%;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+  .primary-navigation[data-visible='true'] {
+    transform: translateX(0);
+  }
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    background-image: url(./assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url(./assets/shared/icon-close.svg);
+  }
+}
+@media (min-width: 35em) {
+  .primary-navigation {
+    padding-inline: clamp(3rem, 9vw, 7rem);
+  }
+}
+
+@media (min-width: 35em) and (max-width: 44.9em) {
+  .primary-navigation a > span {
+    display: none;
+  }
+}
+
+@media (min-width: 45em) {
+  .primary-header::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1px;
+    margin-right: -2.7rem;
+    background: rgba($tertiary, 0.25);
+    z-index: 999;
+    width: 100%;
+    order: 1;
+    opacity: 0.9;
+  }
+  nav {
+    order: 2;
+  }
+
+  .primary-navigation {
+    margin-block: 2rem;
+  }
 }
 
 .underline-indicators > * {
