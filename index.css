@@ -126,7 +126,6 @@ select {
 
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
-  outline: 1px solid red;
 }
 
 .container {
@@ -141,6 +140,7 @@ select {
   display: grid;
   place-items: center;
   padding-inline: 1rem;
+  padding-bottom: 4rem;
 }
 
 .grid-container > * {
@@ -520,5 +520,45 @@ body {
   .home {
     background-image: url(./assets/home/background-home-desktop.jpg);
   }
+}
+
+.grid-container--destination {
+  --flow-space: 2rem;
+      grid-template-areas: 'title' 'image' 'tabs' 'content';
+}
+
+.numbered-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.grid-container--destination > img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: image;
+  max-width: 50%;
+}
+
+.grid-container--destination > .tab-list {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tabs;
+}
+
+.grid-container--destination > .destination-info {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.dest-meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 /*# sourceMappingURL=index.css.map */
