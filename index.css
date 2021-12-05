@@ -445,10 +445,11 @@ select {
 }
 
 .underline-indicators > * {
-  padding: var(--underline-gap, 1rem) 0;
+  padding: var(--underline-gap, 0.55rem) 0;
   border: 0;
   cursor: pointer;
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+  background-color: transparent;
 }
 
 .underline-indicators > *:hover,
@@ -502,6 +503,41 @@ body {
 @media (min-width: 45rem) {
   .home {
     background-image: url(./assets/home/background-home-desktop.jpg);
+  }
+}
+
+.destination {
+  background-image: url(./assets/destination/background-destination-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+  .destination {
+    background-position: center center;
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+  }
+}
+
+@media (min-width: 45rem) {
+  .destination {
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+  }
+}
+
+/* crew */
+.crew {
+  background-image: url(./assets/home/background-crew-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+  .crew {
+    background-position: center center;
+    background-image: url(./assets/crew/background-crew-tablet.jpg);
+  }
+}
+
+@media (min-width: 45rem) {
+  .crew {
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
   }
 }
 
@@ -572,6 +608,10 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: content;
+}
+
+.crew-details h2 {
+  opacity: .5;
 }
 
 @media (min-width: 35em) {
