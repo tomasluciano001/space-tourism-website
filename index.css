@@ -738,6 +738,11 @@ body {
   .numbers-indicators > button {
     margin-top: 20px;
   }
+  .tech-img img {
+    position: relative;
+    top: 20px;
+    left: 220px;
+  }
 }
 
 @media (min-width: 35em) {
