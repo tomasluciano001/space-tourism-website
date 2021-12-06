@@ -738,11 +738,6 @@ body {
   .numbers-indicators > button {
     margin-top: 20px;
   }
-  .tech-img img {
-    position: relative;
-    top: 20px;
-    left: 220px;
-  }
 }
 
 @media (min-width: 35em) {
@@ -764,21 +759,29 @@ body {
     margin-left: 15px;
     width: 60px;
   }
-  .tech-img img {
-    max-width: 100vw;
-    max-height: 100vh;
-    position: relative;
+  .tech-img > img {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
   }
+}
+
+.grid-container--tech {
+  --flow-space: 2rem;
+      grid-template-areas: 'title' 'image' 'tabs' 'content';
 }
 
 .numbers-indicators {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .numbers-indicators > button {
   margin-left: 15px;
-  width: 50px;
+  width: 80px;
+  height: 80px;
 }
 /*# sourceMappingURL=index.css.map */
