@@ -709,45 +709,175 @@ body {
 /* Layout                        */
 /* ----------------------------- */
 /* Technology layout */
-.grid-container--tech {
-      grid-template-areas: 'title' 'image' 'tabs' 'content';
-}
-
-.tech-title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: title;
-}
-
-.grid-container--tech > .tech-img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: image;
-  width: 150%;
-}
-
-.numbers-indicators {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: tabs;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 18px;
-  padding: auto;
-  margin: auto;
-}
-
-.numbers-indicators button {
-  margin-left: 25px;
-  width: 60px;
-  height: 60px;
-  position: relative;
+@media (max-width: 45em) {
+  .tech {
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+  }
+  .grid-container--tech {
+        grid-template-areas: 'title' 'image' 'tabs' 'content';
+  }
+  .grid-container--tech {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tech-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .grid-container--tech > .tech-img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: image;
+    min-width: 100%;
+  }
+  .numbers-indicators {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: tabs;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    padding: auto;
+    margin: auto;
+  }
+  .numbers-indicators button {
+    margin-left: 25px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
 }
 
 .tech-desc {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: content;
+}
+
+@media (min-width: 35em) {
+  .tech {
+    background-image: url(./assets/technology/background-technology-tablet.jpg);
+  }
+  .grid-container--tech {
+        grid-template-areas: 'title' 'image' 'tabs' 'content';
+  }
+  .grid-container--tech {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tech-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .grid-container--tech > .tech-img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: image;
+    min-width: 100%;
+  }
+  .numbers-indicators {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: tabs;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    padding: auto;
+    margin: auto;
+  }
+  .numbers-indicators button {
+    margin-left: 25px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+}
+
+@media (min-width: 45rem) {
+  .tech {
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+  }
+  .grid-container--tech {
+        grid-template-areas: 'tabs title image' 'tabs content image';
+  }
+  .tech-title {
+    position: absolute;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: title;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    top: 150px;
+    left: 100px;
+  }
+  .numbers-indicators {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: tabs;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .numbers-indicators button {
+    margin-top: 15px;
+  }
+  .numbers-indicators {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: tabs;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 25px;
+    padding-left: 130px;
+  }
+  .numbers-indicators button {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    padding-top: 21px;
+  }
+  .tech-details {
+    padding-left: 200px;
+    padding-top: 120px;
+  }
+  .tech-details .tech-headings {
+    width: 560px;
+  }
+  .tech-details .tech-headings h2 {
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #d2d8f9;
+    letter-spacing: 2.7px;
+  }
+  .tech-details .tech-headings .main-tech-title {
+    color: white;
+    padding-bottom: 30px;
+  }
+  .tech-details .tech-desc {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: content;
+  }
+  .tech-details .tech-desc p {
+    width: 445px;
+  }
+  .tech-img > img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: image;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

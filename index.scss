@@ -819,7 +819,10 @@ body {
 
 
 
-
+@media (max-width: 45em) {
+  .tech {
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+}
 .grid-container--tech {
   grid-template-areas: 
       'title'
@@ -827,14 +830,16 @@ body {
       'tabs'
       'content';
 }
+.grid-container--tech {
+  padding-left: 0;
+  padding-right: 0;
+}
 .tech-title {
   grid-area: title;
 }
 .grid-container--tech > .tech-img {
   grid-area: image;
-  width: 150%;
-
-
+  min-width: 100%;
 }
 
 .numbers-indicators {
@@ -852,7 +857,137 @@ body {
 
   }
 }
-
+}
 .tech-desc {
   grid-area: content;
 }
+
+@media (min-width: 35em) {
+  .tech {
+    background-image: url(./assets/technology/background-technology-tablet.jpg);
+}
+  .grid-container--tech {
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content';
+  }
+  .grid-container--tech {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tech-title {
+    grid-area: title;
+  }
+  .grid-container--tech > .tech-img {
+    grid-area: image;
+    min-width: 100%;
+  }
+  
+  .numbers-indicators {
+    grid-area: tabs;
+    display: flex;
+  
+    font-size: 18px;
+    padding: auto;
+    margin: auto;
+    button {
+      margin-left: 25px;
+      width: 60px;
+      height: 60px;
+      position: relative;
+  
+    }
+  }
+}
+
+@media (min-width: 45rem) {
+
+  .tech {
+      background-image: url(./assets/technology/background-technology-desktop.jpg);
+  }
+
+  .grid-container--tech {
+    grid-template-areas: 
+        'tabs title image'
+        'tabs content image'
+  }
+
+  .tech-title {
+    position:absolute;
+    grid-area: title;
+    justify-content:start;
+    top: 150px;
+    left: 100px;
+  }
+  .numbers-indicators {
+    grid-area: tabs;
+    // display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 15px;
+    }
+    
+  }
+
+    .numbers-indicators {
+      grid-area: tabs;
+      display: flex;
+    
+      font-size: 25px;
+      padding-left: 130px;
+      
+      button {
+        // margin-left: 65px;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        padding-top: 21px;
+
+      }
+    }
+    .tech-details{
+      padding-left: 200px;
+      padding-top: 120px;
+      .tech-headings{
+        width: 560px;
+        h2 { 
+          padding-bottom: 20px;
+          font-size: 16px;
+          color: $secondary;
+          letter-spacing: 2.7px;
+        }
+        .main-tech-title{
+          color: $tertiary;
+          padding-bottom: 30px;
+        }
+      }
+
+
+
+      .tech-desc{
+        grid-area: content;
+        
+        p { 
+          width: 445px;
+        }
+      }
+    }
+
+
+    
+
+  .tech-img > img {
+      grid-area: image;
+      position: absolute;
+      right:0;
+      bottom: 100px;
+    
+    }
+    
+
+    }
+
+    
+  
