@@ -991,3 +991,18 @@ body {
 
     
   
+    .attribution {
+      width: 300px;
+      color: $secondary;
+      font-size: 11px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+  
+    .attribution a {
+      color: $tertiary;
+    }
