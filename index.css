@@ -756,7 +756,7 @@ body {
   grid-area: content;
 }
 
-@media (min-width: 42em) {
+@media (min-width: 48em) {
   .tech {
     background-image: url(./assets/technology/background-technology-tablet.jpg);
   }
@@ -797,7 +797,7 @@ body {
   }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 48.1rem) {
   .tech {
     background-image: url(./assets/technology/background-technology-desktop.jpg);
   }
