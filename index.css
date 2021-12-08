@@ -633,7 +633,7 @@ body {
 }
 
 .crew-details h2 {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (min-width: 35em) {
@@ -756,7 +756,7 @@ body {
   grid-area: content;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 42em) {
   .tech {
     background-image: url(./assets/technology/background-technology-tablet.jpg);
   }
@@ -813,7 +813,7 @@ body {
         -ms-flex-pack: start;
             justify-content: start;
     top: 150px;
-    left: 100px;
+    left: 15%;
   }
   .numbers-indicators {
     -ms-grid-row: 1;
